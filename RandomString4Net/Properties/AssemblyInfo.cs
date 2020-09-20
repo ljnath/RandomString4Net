@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("RandomString4Net")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription(".NET library for generation of N random string of M length from various categories")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Lakhya's Innovation Inc.")]
 [assembly: AssemblyProduct("RandomString4Net")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCopyright("Copyright © Lakhya's Innovation Inc. 2020")]
+[assembly: AssemblyTrademark("RandomString4Net")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible

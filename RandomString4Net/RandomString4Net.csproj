@@ -36,8 +36,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Source.cs" />
-    <Compile Include="InvalidSymbolsException.cs" />
+    <Compile Include="DataSource.cs" />
+    <Compile Include="Exceptions\InvalidSymbolsException.cs" />
     <Compile Include="RandomString.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types.cs" />

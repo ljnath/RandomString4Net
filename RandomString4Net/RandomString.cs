@@ -1,9 +1,8 @@
-﻿using System;
+﻿using RandomString4Net.Exceptions;
+using System;
 using System.Collections.Generic;
-using System.Runtime.Remoting.Contexts;
 using System.Security.Cryptography;
 using System.Text;
-using System.Text.RegularExpressions;
 
 namespace RandomString4Net
 {
@@ -37,8 +36,8 @@ namespace RandomString4Net
         private static void ValidateSymbols(string inputSymbols)
         {
             foreach(char symbol in inputSymbols)
-                if (!Source.Symbols.Contains(symbol.ToString()))
-                    throw new InvalidSymbolsException(string.Format("Input symbols should be a subset of {0}", Source.Symbols));
+                if (!DataSource.Symbols.Contains(symbol.ToString()))
+                    throw new InvalidSymbolsException(string.Format("Input symbols should be a subset of {0}", DataSource.Symbols));
         }
 
         private static List<string> GetRandomStrings(string inputString, int count, int maxLength, bool randomLength)

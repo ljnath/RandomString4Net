@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace RandomString4Net
+namespace RandomString4Net.Exceptions
 {
     [Serializable]
     public class InvalidSymbolsException : Exception

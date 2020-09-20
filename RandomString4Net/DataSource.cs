@@ -1,6 +1,6 @@
 ﻿namespace RandomString4Net
 {
-    internal static class Source
+    internal static class DataSource
     {
         internal static string Alphabets { get { return "abcdefghijklmnopqrstuvwxyz"; } }
         internal static string Numbers { get { return "0123456789"; } }
