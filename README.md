@@ -8,6 +8,7 @@ Website : https://www.ljnath.com
 
 ![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
+![Travis (.org)](https://img.shields.io/travis/ljnath/RandomString4Net)
 
 
 ## Introduction
