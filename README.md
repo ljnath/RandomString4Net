@@ -6,9 +6,10 @@ Date : September 2020<br>
 Email : ljnath@ljnath.com<br>
 Website : https://www.ljnath.com
 
-![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)
+[![Nuget](https://img.shields.io/nuget/v/RandomString4Net)](https://www.nuget.org/packages/RandomString4Net/)
+[![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)](www.nuget.org/stats/packages/RandomString4Net)
+[![Travis (.org)](https://img.shields.io/travis/ljnath/RandomString4Net)](https://travis-ci.org/github/ljnath/RandomString4Net)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
-![Travis (.org)](https://img.shields.io/travis/ljnath/RandomString4Net)
 
 
 ## Introduction
