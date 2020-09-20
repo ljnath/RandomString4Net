@@ -8,9 +8,10 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>RandomString4NetTester</RootNamespace>
     <AssemblyName>RandomString4NetTester</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,9 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RandomString4Net\RandomString4Net.csproj">
-      <Project>{9015c101-41ca-4327-934a-7669570ac9a0}</Project>
+      <Project>{f0a77092-0c76-4151-843c-cd1bd33174b0}</Project>
       <Name>RandomString4Net</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

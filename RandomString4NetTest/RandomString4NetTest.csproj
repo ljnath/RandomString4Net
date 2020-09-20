@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RandomString4Net\RandomString4Net.csproj">
-      <Project>{9015c101-41ca-4327-934a-7669570ac9a0}</Project>
+      <Project>{f0a77092-0c76-4151-843c-cd1bd33174b0}</Project>
       <Name>RandomString4Net</Name>
     </ProjectReference>
   </ItemGroup>

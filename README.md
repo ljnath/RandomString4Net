@@ -1,5 +1,5 @@
 # RandomString4Net
-### Version 1.1.0
+### Version 1.2.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
 Date : September 2020<br>
@@ -24,7 +24,7 @@ It also allows you to generate random string with only a subset of symbols from 
 <br><br>
 
 ## Supported Types
-* **NUMERIC** : *0123456789*
+* **NUMBER** : *0123456789*
 * **SYMBOLS** : *!#$%&'()\*+,-./:;<=>?@[]\^_`{|}~"*
 * **ALPHABET_LOWERCASE** : *abcdefghijklmnopqrstuvwxyz*
 * **ALPHABET_UPPERCASE** : *ABCDEFGHIJKLMNOPQRSTUVWXYZ*

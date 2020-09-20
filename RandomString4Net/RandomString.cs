@@ -112,7 +112,7 @@ namespace RandomString4Net
             int inputStringLength = inputString.Length;
             int outputStringLength;
             List<string> randomStrings = new List<string>();
-            
+
             for (int i = 0; i < count; i++)
             {
                 outputStringLength = randomLength ? random.Next(1, maxLength) : maxLength;
