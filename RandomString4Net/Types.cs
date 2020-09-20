@@ -8,7 +8,9 @@ namespace System.Runtime.CompilerServices
 
 namespace RandomString4Net
 {
-
+    /// <summary>
+    /// Enum <c>Types</c> are the types of categories supported by the RandomString4Net library
+    /// </summary>
     public enum Types
     {
         ALPHABET_LOWERCASE,
@@ -22,12 +24,17 @@ namespace RandomString4Net
         ALPHANUMERIC_UPPERCASE,
         ALPHANUMERIC_UPPERCASE_WITH_SYMBOLS,
         ALPHANUMERIC_MIXEDCASE,
-        ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS
+        ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS,
+        NUMBERS
     }
     public static class TypesMethods
     {
 
-
+        /// <summary>
+        /// Returns the string corresponding to the enum <c>Types</c>
+        /// </summary>
+        /// <param name="types"><c>Types</c> for whose equivalent string needs to be constructed</param>
+        /// <returns>String equivalent of Enum <c>Types</c></returns>
         public static string GetString(this Types types)
         {
             switch (types)
@@ -49,6 +56,8 @@ namespace RandomString4Net
 
                 case Types.ALPHANUMERIC_MIXEDCASE: return string.Format("{0}{1}", Types.ALPHABET_MIXEDCASE.GetString(), DataSource.Numbers);
                 case Types.ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS: return string.Format("{0}{1}", Types.ALPHANUMERIC_MIXEDCASE.GetString(), DataSource.Symbols);
+
+                case Types.NUMBERS: return DataSource.Numbers;
             }
             return string.Empty;
         }
