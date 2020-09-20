@@ -3,11 +3,11 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("RandomString4NetTest")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Unit tests for the RandomString4Net library")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Lakhya's Innovation Inc")]
 [assembly: AssemblyProduct("RandomString4NetTest")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright © Lakhya's Innovation Inc. 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
