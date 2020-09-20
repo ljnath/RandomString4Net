@@ -10,6 +10,13 @@ namespace RandomString4NetTest
     public class RandomString4NetTests
     {
         [TestMethod]
+        public void ValidateTypeGetString()
+        {
+            string numbersAsString = Types.NUMBERS.GetString();
+            Assert.AreEqual("0123456789", numbersAsString);
+        }
+
+        [TestMethod]
         public void ValidateSingleRandomString()
         {
             string randomString = RandomString.GetString(Types.ALPHABET_LOWERCASE);
@@ -101,6 +108,7 @@ namespace RandomString4NetTest
             Assert.IsTrue(Regex.IsMatch(randomString, @"^[a-zA-Z*&^%$#@!]+$"));
         }
 
+        [TestMethod]
         public void ValidateLowercaseAlphaNumericWithSymbols()
         {
             string randomString = RandomString.GetString(Types.ALPHANUMERIC_LOWERCASE_WITH_SYMBOLS);
