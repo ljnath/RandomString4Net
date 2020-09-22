@@ -1,6 +1,9 @@
 ﻿using RandomString4Net;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace RandomString4NetTester
 {
@@ -36,6 +39,22 @@ namespace RandomString4NetTester
                 foreach (string str in randomStrings)
                     System.Console.Write(str + ", ");
             }
+
+            s.Start();
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomNumbers = RandomString.GetStrings(Types.NUMBERS, 100000, 10, false, true);
+
+                var anyDuplicate = randomNumbers.GroupBy(x => x).Any(g => g.Count() > 1);
+                var allUnique = randomNumbers.GroupBy(x => x).All(g => g.Count() == 1);
+
+                if (anyDuplicate)
+                    System.Console.WriteLine(i + 1 + ". duplicate = " + anyDuplicate + " ; unique = " + allUnique);
+            }
+            s.Stop();
+            System.Console.WriteLine(string.Format("Time taken = {0} ms or {1} s", s.ElapsedMilliseconds, s.ElapsedMilliseconds / 1000));
+
+
 
             System.Console.WriteLine("\n\nPress any key to exit...");
             System.Console.ReadKey();

@@ -2,6 +2,7 @@
 using RandomString4Net;
 using RandomString4Net.Exceptions;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace RandomString4NetTest
@@ -152,6 +153,17 @@ namespace RandomString4NetTest
             List<string> randomStrings = RandomString.GetStrings(Types.NUMBERS, 10, 15, true);
             foreach (string randomString in randomStrings)
                 Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]{1,15}$"));
+        }
+
+        [TestMethod]
+        public void ValdateTrueRandomness()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.NUMBERS, 100000, 10, false, true);
+                var anyDuplicate = randomStrings.GroupBy(x => x).Any(g => g.Count() > 1);
+                Assert.IsFalse(anyDuplicate);
+            }
         }
     }
 }
