@@ -21,7 +21,7 @@ namespace RandomString4Net
         /// </summary>
         /// <param name="types">Type of RandomString4Net.Types is the type of input string for random string generation</param>
         /// <param name="maxLength">Maximum length of a random string to be generated; default is 10</param>
-        /// <param name="forceUnique">Boolean choice to force generation of only unique numbers, count may not be met if this is set to true</param>
+        /// <param name="randomLength">Boolean choice if the length of the generated random string should be random as well</param>
         /// <returns>A newly generated random string</returns>
         /// <exception cref="InvalidLengthException">Thown if <c>count</c> or <c>maxLenght</c> is less then or equal to 0</exception>
         public static string GetString(Types types, int maxLength = 10, bool randomLength = false)
