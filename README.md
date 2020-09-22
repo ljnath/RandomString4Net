@@ -13,14 +13,22 @@ Website : https://www.ljnath.com
 
 
 ## Introduction
-RandomString4Net is a library developed in .NET Framework to generate N random strings of M length from various categories. <br>It is fast and suports string generation of various length thus making it ideal for automatic password generation or any similar process.<br><br>
+RandomString4Net is a library developed in .NET Framework to generate N random strings of M length from various categories. It is fast and suports string generation of various length.<br><br>
 It is parameterized to generate both a single or a list of random strings.<br>
 Random strings can be of types alphabet and alphanumeric supporting all the cases viz. lower, upper and mixed.<br>
 It also supports symbol during the random string generation process. Following are the list of supported symbols
 <br>
 !#$%&'()*+,-./:;<=>?@[]\^_`{|}~"
 
-It also allows you to generate random string with only a subset of symbols from the above supported list.
+It also allows you to generate random string with only a subset of symbols from the above supported list. It is an ideal use for project like
+* password generator
+* mobile number generator
+* unique-id generator
+* unique filename generator
+* raw data generator for data processing/parsing projects
+* fake name generator
+etc. etc.
+
 
 
 ## Features
