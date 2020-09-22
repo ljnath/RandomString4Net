@@ -65,7 +65,7 @@ PM> Install-Package RandomString4Net
 ```
 ### 2. Add reference in your project
 
-### 1. Install Package
+### 3. Call the methods in your program
 ```csharp
 using RandomString4Net;
 
