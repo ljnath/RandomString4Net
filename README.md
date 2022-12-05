@@ -1,8 +1,8 @@
 # RandomString4Net
-### Version 1.3.0
+### Version 1.4.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
-Date : September 2020<br>
+Date : September 2020 - December 2022<br>
 Email : ljnath@ljnath.com<br>
 Website : https://www.ljnath.com
 
@@ -39,7 +39,7 @@ etc. etc.
 * Supports true unique random number generation (v1.3.0)
 * Built with compilation conditions to take advantage of newer .NET Framework functionalities
 * Improved performance in newer .NET Framework ( >2.0)
-
+* Added support to force include strings of each type (version 1.4.0)
 
 ## Supported Types
 * **NUMBER** : *0123456789*
@@ -91,6 +91,11 @@ namespace RandomString4NetTester
         List<string> trueUniqueRandomStrings = RandomString.GetStrings(Types.ALPHABET_UPPERCASE, 1000, 20, false, true);
         foreach (string s in trueUniqueRandomStrings)
             System.Console.WriteLine(s);
+
+        // generating 100 random string of mixedcase alphanummeric with custom symbols
+        List<string> randomAlphabetWithCustomSymbols = RandomString.GetStrings(Types.ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS, 100, "/+*-", forceOccuranceOfEachType: true);
+        foreach (string s in randomAlphabetWithCustomSymbols)
+            System.Console.WriteLine(s);
     }
 }
 ```
@@ -102,4 +107,4 @@ Thanks in advance !
 
 ## License
 
-Copyright © 2020 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
+Copyright © 2022 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
