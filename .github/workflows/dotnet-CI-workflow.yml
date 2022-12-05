@@ -19,4 +19,4 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     - name: Build app for release
-      run: msbuild src\YourProjectFile.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild RandomString4Net.sln -t:rebuild -verbosity:diag -property:Configuration=Release
