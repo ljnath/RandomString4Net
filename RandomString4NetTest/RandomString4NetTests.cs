@@ -13,8 +13,8 @@ namespace RandomString4NetTest
         [TestMethod]
         public void ValidateTypeGetString()
         {
-            string numbersAsString = Types.NUMBERS.GetString();
-            Assert.AreEqual("0123456789", numbersAsString);
+            string[] numbersAsString = Types.NUMBERS.GetString();
+            Assert.AreEqual("0123456789", numbersAsString[0]);
         }
 
         [TestMethod]
@@ -64,7 +64,7 @@ namespace RandomString4NetTest
         {
             List<string> randomStrings = RandomString.GetStrings(Types.ALPHABET_UPPERCASE, 2, "+*-/");
             foreach (string randomString in randomStrings)
-                Assert.IsTrue(Regex.IsMatch(randomString, @"^[A-Z+*-/]+$"));
+                Assert.IsTrue(Regex.IsMatch(randomString, @"^[A-Z+*-/]+$", RegexOptions.Compiled));
         }
 
         [TestMethod]
@@ -117,7 +117,7 @@ namespace RandomString4NetTest
         }
 
         [TestMethod]
-        public void ValidateUppercaseAlphaNumbericWithSymbols()
+        public void ValidateUppercaseAlphaNumericWithSymbols()
         {
             string randomString = RandomString.GetString(Types.ALPHANUMERIC_UPPERCASE_WITH_SYMBOLS, 100);
             System.Console.WriteLine(randomString);
@@ -125,7 +125,7 @@ namespace RandomString4NetTest
         }
 
         [TestMethod]
-        public void ValidateMixedcaseAlphaNumbericWithSymbols()
+        public void ValidateMixedcaseAlphaNumericWithSymbols()
         {
             string randomString = RandomString.GetString(Types.ALPHABET_MIXEDCASE_WITH_SYMBOLS);
             Assert.IsTrue(Regex.IsMatch(randomString, @"^[0-9a-zA-Z!#$%&'()*+,-./:;<=>?@[\]\\^_`{|}~""]+$"));
@@ -136,7 +136,7 @@ namespace RandomString4NetTest
         {
             List<string> randomStrings = RandomString.GetStrings(Types.NUMBERS, 10);
             foreach (string randomString in randomStrings)
-                Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]+$"));
+                Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]+$", RegexOptions.Compiled));
         }
 
         [TestMethod]
@@ -144,7 +144,7 @@ namespace RandomString4NetTest
         {
             List<string> randomStrings = RandomString.GetStrings(Types.NUMBERS, 10, 20);
             foreach (string randomString in randomStrings)
-                Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]{20}$"));
+                Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]{20}$", RegexOptions.Compiled));
         }
 
         [TestMethod]
@@ -152,17 +152,105 @@ namespace RandomString4NetTest
         {
             List<string> randomStrings = RandomString.GetStrings(Types.NUMBERS, 10, 15, true);
             foreach (string randomString in randomStrings)
-                Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]{1,15}$"));
+                Assert.IsTrue(Regex.IsMatch(randomString, "^[0-9]{1,15}$", RegexOptions.Compiled));
         }
 
         [TestMethod]
-        public void ValdateTrueRandomness()
+        public void ValidateTrueRandomness()
         {
             for (int i = 0; i < 100; i++)
             {
                 List<string> randomStrings = RandomString.GetStrings(Types.NUMBERS, 100000, 10, false, true);
                 var anyDuplicate = randomStrings.GroupBy(x => x).Any(g => g.Count() > 1);
                 Assert.IsFalse(anyDuplicate);
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphabetWithCustomSymbols()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHABET_LOWERCASE_WITH_SYMBOLS, symbolsToInclude: "*&^%$#@!", count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[a-z*&^%$#@!]{20}$", RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphabetUppercaseWithCustomSymbols()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHABET_UPPERCASE_WITH_SYMBOLS, symbolsToInclude: "*&^%$#@!", count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[A-Z*&^%$#@!]{20}$", RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphaNumericLowercase()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_LOWERCASE, count:1000, maxLength:20, forceUnique:false, forceOccuranceOfEachType:true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[a-z0-9]{20}$",RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphaNumericLowercaseWithCustomSymbols()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_LOWERCASE_WITH_SYMBOLS, symbolsToInclude:"*&^%$#@!", count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[a-z0-9*&^%$#@!]{20}$", RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphaNumericUppercase()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_UPPERCASE, count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[A-Z0-9]{20}$", RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphaNumericUppercaseWithCustomSymbols()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_UPPERCASE_WITH_SYMBOLS, symbolsToInclude: "*&^%$#@!", count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[A-Z0-9*&^%$#@!]{20}$", RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphaNumericMixedcase()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_MIXEDCASE, count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[a-zA-Z0-9]{20}$", RegexOptions.Compiled));
+            }
+        }
+
+        [TestMethod]
+        public void ValidateForceOccuranceForAlphaNumericMixedcaseWithCustomSymbols()
+        {
+            for (int i = 0; i < 100; i++)
+            {
+                List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS, symbolsToInclude: "*&^%$#@!", count: 1000, maxLength: 20, forceUnique: false, forceOccuranceOfEachType: true);
+                foreach (string randomString in randomStrings)
+                    Assert.IsTrue(Regex.IsMatch(randomString, "^[a-zA-Z0-9*&^%$#@!]{20}$", RegexOptions.Compiled));
             }
         }
     }
