@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
     steps:
     - uses: actions/checkout@v3
 
@@ -27,11 +27,3 @@ jobs:
     - name: Build app for release
       run: msbuild RandomString4Net.sln -property:Configuration=Release
       
-    #- name: Install dependencies
-    #  run: dotnet restore
-      
-    #- name: Build
-    #  run: dotnet build --configuration Release --no-restore
-      
-    #- name: Test
-    #  run: dotnet test --no-restore --verbosity normal
