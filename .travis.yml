@@ -1,4 +1,0 @@
-language: csharp
-solution: RandomString4Net.sln
-script:
-  - msbuild /p:Configuration=Release RandomString4Net.sln
