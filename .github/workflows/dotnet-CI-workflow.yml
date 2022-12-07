@@ -24,14 +24,14 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore RandomString4Net.sln
 
-    #- name: Build app for release
-    #  run: msbuild RandomString4Net.sln -property:Configuration=Release
+    - name: Build app for release
+      run: msbuild RandomString4Net.sln -property:Configuration=Release
       
-    - name: Install dependencies
-      run: dotnet restore
+    #- name: Install dependencies
+    #  run: dotnet restore
       
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+    #- name: Build
+    #  run: dotnet build --configuration Release --no-restore
       
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+    #- name: Test
+    #  run: dotnet test --no-restore --verbosity normal
