@@ -26,15 +26,10 @@ jobs:
 
     - name: Build RandomString4Net project for release
       run: msbuild RandomString4Net.sln -property:Configuration=Release -property:platform="Any CPU"
-      
-  test:
-    runs-on: windows-2019
-    steps:
-    - uses: actions/checkout@v3
 
     - name: Setup VSTest
       uses: microsoft/vstest-action@v1.0.0
       with:
         testAssembly: .\RandomString4NetTest\bin\Release\RandomString4NetTest.dll
         runInParallel: true
-      
+        
