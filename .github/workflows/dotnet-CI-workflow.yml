@@ -18,6 +18,9 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.1.3
       
+    - name: Setup VSTest
+      uses: darenm/Setup-VSTest@v1.2
+      
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.1.1
       
@@ -26,10 +29,6 @@ jobs:
 
     - name: Build RandomString4Net project for release
       run: msbuild RandomString4Net.sln -property:Configuration=Release -property:platform="Any CPU"
-
-    - name: Setup VSTest
-      uses: microsoft/vstest-action@v1.0.0
-      with:
-        testAssembly: .\RandomString4NetTest\bin\Release\RandomString4NetTest.dll
-        runInParallel: true
-        
+      
+    - name: Run Tests
+      run: vstest.console.exe .\RandomString4NetTest\bin\Release\RandomString4NetTest.dll
