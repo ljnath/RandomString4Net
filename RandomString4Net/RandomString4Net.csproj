@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481</TargetFrameworks>
+    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48</TargetFrameworks>
     <Version>1.5.0</Version>
     <Authors>Lakhya Jyoti Nath</Authors>
     <Company>Lakhya's Innovation Inc.</Company>
