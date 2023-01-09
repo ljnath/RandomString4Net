@@ -1,27 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48</TargetFrameworks>
-    <Version>1.4.0</Version>
+    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;net481</TargetFrameworks>
+    <Version>1.5.0</Version>
     <Authors>Lakhya Jyoti Nath</Authors>
     <Company>Lakhya's Innovation Inc.</Company>
     <Description>.NET library to generate N random strings of M length from various categories</Description>
-    <Copyright>Copyright © Lakhya's Innovation Inc. 2022</Copyright>
+    <Copyright>Copyright © Lakhya's Innovation Inc. 2023</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ljnath/RandomString4Net</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/ljnath/RandomString4Net.git</RepositoryUrl>
     <PackageTags>randomstring4net ljnath lakhya lakhyajyoti innovation lakhya's inc. lakhyajyotinath randomstring random string C# libray password generator passwordgenerator generation symbols randomsymbols lowercase uppercase mixedcase customsymbols randomnumber number</PackageTags>
-    <PackageReleaseNotes>- Initial release with support for alphabet, alphanumeric with any without symbols for all cases
+    <PackageReleaseNotes>
+- Initial release with support for alphabet, alphanumeric with any without symbols for all cases
 - Added support for random number generation
 - Added support for multiple .NET Framework
 - Added support to generate true unique random numbers
 - Added performance improvement for .NET Framework &gt; 2.0
 - Added support to generate random strings by including strings of each type</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <AssemblyVersion>1.4.0.0</AssemblyVersion>
-    <FileVersion>1.4.0.0</FileVersion>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <FileVersion>1.5.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
-
 </Project>

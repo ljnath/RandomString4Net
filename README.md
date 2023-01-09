@@ -1,8 +1,8 @@
 # RandomString4Net
-### Version 1.4.0
+### Version 1.5.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
-Date : September 2020 - December 2022<br>
+Date : September 2020 - December 2022 - January 2023<br>
 Email : ljnath@ljnath.com<br>
 Website : https://www.ljnath.com
 
@@ -107,4 +107,4 @@ Thanks in advance !
 
 ## License
 
-Copyright © 2022 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
+Copyright © 2023 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).

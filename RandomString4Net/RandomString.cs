@@ -145,7 +145,7 @@ namespace RandomString4Net
             Random random = new Random(randomSeeds[0]);
 
             if (!forceOccuranceOfEachType)
-                return getRandomStrings(random, inputStrings[0], count, maxLength, randomLength, forceUnique);
+                return getRandomStrings(random, String.Join("", inputStrings), count, maxLength, randomLength, forceUnique);
             else
                 return getRandomStrings(random, inputStrings, count, maxLength, randomLength, forceUnique);
         }
@@ -192,7 +192,7 @@ namespace RandomString4Net
 
             int inputTypeIndex, inputStringLength, outputStringLength;
 
-            for (int i = 0; i < count; i++)
+            while (randomStrings.Count < count)
             {
                 outputStringLength = randomLength ? randomInstance.Next(1, maxLength) : maxLength;
                 StringBuilder currentRandomString = new StringBuilder();

@@ -46,7 +46,7 @@ namespace RandomString4NetTester
                 s.Start();
                 List<string> randomStrings = RandomString.GetStrings(Types.ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS, count: i * 10, symbolsToInclude: "+-*/", maxLength: 20, forceUnique: true, forceOccuranceOfEachType: true);
                 s.Stop();
-                System.Console.WriteLine(string.Format("Generated a list of {1} random strings of type ALPHANUMERIC_MIXEDCASE with custom symbols and forced occurance of each type, time taken = {0} ms", s.ElapsedMilliseconds, i * 10));
+                System.Console.WriteLine(string.Format("Generated a list of {1} random strings of type ALPHANUMERIC_MIXEDCASE_WITH_SYMBOLS with custom symbols and forced occurance of each type, time taken = {0} ms", s.ElapsedMilliseconds, i * 10));
                 foreach (string str in randomStrings)
                     System.Console.Write(str + ", ");
             }
