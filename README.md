@@ -8,7 +8,7 @@ Website : https://www.ljnath.com
 
 [![Nuget](https://img.shields.io/nuget/v/RandomString4Net)](https://www.nuget.org/packages/RandomString4Net/)
 [![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)](https://www.nuget.org/stats/packages/RandomString4Net)
-[![Github Actions](https://img.shields.io/github/workflow/status/ljnath/RandomString4Net/.net-github-workflow)](https://github.com/ljnath/RandomString4Net/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ljnath/RandomString4Net/dotnet-CI-workflow.yml)](https://github.com/ljnath/RandomString4Net/actions)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
 
 
