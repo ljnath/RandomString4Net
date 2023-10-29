@@ -1,9 +1,7 @@
 ﻿using RandomString4Net;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 
 namespace RandomString4NetTester
 {

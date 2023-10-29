@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Lakhya's Innovation Inc")]
 [assembly: AssemblyProduct("RandomString4NetTest")]
-[assembly: AssemblyCopyright("Copyright © Lakhya's Innovation Inc. 2023")]
+[assembly: AssemblyCopyright("Copyright © 2020-2023 Lakhya's Innovation Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

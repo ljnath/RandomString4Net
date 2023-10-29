@@ -1,8 +1,8 @@
 # RandomString4Net
-### Version 1.5.0
+### Version 1.6.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
-Date : September 2020 - December 2022 - January 2023<br>
+Date : September 2020 - December 2022 - January 2023 - October 2023<br>
 Email : ljnath@ljnath.com<br>
 Website : https://www.ljnath.com
 
@@ -40,6 +40,9 @@ etc. etc.
 * Built with compilation conditions to take advantage of newer .NET Framework functionalities
 * Improved performance in newer .NET Framework ( >2.0)
 * Added support to force include strings of each type (version 1.4.0)
+* Added support for .NET (>5.0)
+* Added support for .NET Core (>2.2)
+* Added support for .NET Standard (>2.0)
 
 ## Supported Types
 * **NUMBER** : *0123456789*
@@ -107,4 +110,4 @@ Thanks in advance !
 
 ## License
 
-Copyright © 2023 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
+Copyright © 2020-2023 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
