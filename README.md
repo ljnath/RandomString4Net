@@ -1,14 +1,13 @@
 # RandomString4Net
-### Version 1.6.0
+### Version 1.7.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
-Date : September 2020 - December 2022 - January 2023 - October 2023<br>
+Date : September 2020 - December 2022 - January 2023 - October 2023 - November 2023<br>
 Email : ljnath@ljnath.com<br>
 Website : https://www.ljnath.com
 
 [![Nuget](https://img.shields.io/nuget/v/RandomString4Net)](https://www.nuget.org/packages/RandomString4Net/)
 [![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)](https://www.nuget.org/stats/packages/RandomString4Net)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ljnath/RandomString4Net/dotnet-CI-workflow.yml)](https://github.com/ljnath/RandomString4Net/actions)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
 
 
