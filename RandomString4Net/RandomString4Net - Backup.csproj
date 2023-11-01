@@ -4,13 +4,13 @@
     <Version>1.8.0</Version>
     <Authors>Lakhya Jyoti Nath</Authors>
     <Company>Lakhya's Innovation Inc.</Company>
-    <Description>.NET library to generate N random strings of M length from 13 categories</Description>
+    <Description>.NET library to generate N random strings of M length from various categories</Description>
     <Copyright>Copyright © 2020-2023 Lakhya's Innovation Inc.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/ljnath/RandomString4Net</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/ljnath/RandomString4Net.git</RepositoryUrl>
-    <PackageTags>randomstring4net ljnath lakhya lakhyajyoti innovation lakhya's inc. lakhyajyotinath randomstring random string C# libray password generator passwordgenerator generation symbols randomsymbols lowercase uppercase mixedcase customsymbols randomnumber number </PackageTags>
+    <PackageTags>randomstring4net ljnath lakhya lakhyajyoti innovation lakhya's inc. lakhyajyotinath randomstring random string C# libray password generator passwordgenerator generation symbols randomsymbols lowercase uppercase mixedcase customsymbols randomnumber number</PackageTags>
     <PackageReleaseNotes>- Initial release with support for alphabet, alphanumeric with any without symbols for all cases
 - Added support for random number generation
 - Added support for multiple .NET Framework
@@ -19,11 +19,10 @@
 - Added support to generate random strings by including strings of each type
 - Added support for .NET (&gt;5.0)
 - Added support for .NET Core (&gt;2.2)
-- Added support for .NET Standard (&gt;2.0)
-- Added support for RandomNumberGenerator in .NET 6.0 and higher as RNGCryptoServiceProvider is marked as obsolete</PackageReleaseNotes>
+- Added support for .NET Standard (&gt;2.0)</PackageReleaseNotes>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
-    <FileVersion>1.8.0.0</FileVersion>
+    <FileVersion>1.7.0.0</FileVersion>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <AutoGenerateBindingRedirects>False</AutoGenerateBindingRedirects>
     <Title>$(AssemblyName)</Title>

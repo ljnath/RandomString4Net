@@ -1,5 +1,5 @@
 # RandomString4Net
-### Version 1.7.0
+### Version 1.8.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
 Date : September 2020 - December 2022 - January 2023 - October 2023 - November 2023<br>
@@ -42,6 +42,8 @@ etc. etc.
 * Added support for .NET (>5.0)
 * Added support for .NET Core (>2.2)
 * Added support for .NET Standard (>2.0)
+* Added support for RandomNumberGenerator in .NET 6.0 and higher as RNGCryptoServiceProvider is marked as obsolete
+
 
 ## Supported Types
 * **NUMBER** : *0123456789*

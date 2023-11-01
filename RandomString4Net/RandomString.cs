@@ -163,10 +163,16 @@ namespace RandomString4Net
             if (count <= 0 || maxLength <= 0)
                 throw new InvalidLengthException("Number and length of random strings should be a non-zero postive numbver");
 
+            byte[] randomSeeds = new byte[1];
+
+#if NET6_0_OR_GREATER
+            RandomNumberGenerator randomNumberGenerator = RandomNumberGenerator.Create();
+            randomNumberGenerator.GetBytes(randomSeeds);
+#else
             // generating a random seed for the Random()
             RNGCryptoServiceProvider rngCryptoServiceProvider = new RNGCryptoServiceProvider();
-            byte[] randomSeeds = new byte[1];
             rngCryptoServiceProvider.GetBytes(randomSeeds);
+#endif
 
             // creating an instance of Random() using the random seed value
             Random random = new Random(randomSeeds[0]);
@@ -198,6 +204,7 @@ namespace RandomString4Net
 
                 if (forceUnique && randomStrings.Contains(currentRandomString.ToString()))
                     continue;
+
                 randomStrings.Add(currentRandomString.ToString());
             }
 
