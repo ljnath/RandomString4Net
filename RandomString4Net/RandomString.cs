@@ -70,7 +70,6 @@ namespace RandomString4Net
         /// <exception cref="InvalidLengthException">Thown if <c>count</c> or <c>maxLenght</c> is less then or equal to 0</exception>
         public static string GetString(Types types, string symbolsToInclude, int maxLength = 10, bool randomLength = false, bool forceOccuranceOfEachType = false)
         {
-
 #if NET20
             List<string> inputStrings = new List<string>();
 #else
@@ -118,7 +117,6 @@ namespace RandomString4Net
         /// <exception cref="InvalidLengthException">Thown if <c>count</c> or <c>maxLenght</c> is less then or equal to 0</exception>
         public static List<string> GetStrings(Types types, int count, string symbolsToInclude, int maxLength = 10, bool randomLength = false, bool forceUnique = false, bool forceOccuranceOfEachType = false)
         {
-
 #if NET20
             List<string> inputStrings = new List<string>();
 #else
@@ -134,7 +132,6 @@ namespace RandomString4Net
 
             return GetRandomStrings(inputStrings.ToArray(), count, maxLength, randomLength, forceUnique, forceOccuranceOfEachType);
         }
-
 
         /// <summary>
         /// Checks if all the symbols specified in <c>inputSybols</c> are present in the list of supported symbols

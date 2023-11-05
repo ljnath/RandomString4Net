@@ -10,9 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomString4Net", "RandomString4Net\RandomString4Net.csproj", "{F0A77092-0C76-4151-843C-CD1BD33174B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA42BC52-B3AE-465A-BCCF-EDA5F1FF8804}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomString4NetTesterDotNet", "RandomString4NetTesterDotNet\RandomString4NetTesterDotNet.csproj", "{3F3FA738-BED0-4183-B9B0-32B872B65273}"
 EndProject

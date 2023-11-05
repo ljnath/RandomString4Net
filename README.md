@@ -9,6 +9,7 @@ Website : https://www.ljnath.com
 [![Nuget](https://img.shields.io/nuget/v/RandomString4Net)](https://www.nuget.org/packages/RandomString4Net/)
 [![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)](https://www.nuget.org/stats/packages/RandomString4Net)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ljnath/RandOMString4Net)
 
 
 ## Introduction
