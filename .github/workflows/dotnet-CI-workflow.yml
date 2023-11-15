@@ -22,7 +22,7 @@ jobs:
       uses: darenm/Setup-VSTest@v1.2
       
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.1.1
+      uses: NuGet/setup-nuget@v1.2.0
 
     - name: Restore NuGet packages
       run: nuget restore RandomString4Net.sln
