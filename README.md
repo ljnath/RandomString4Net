@@ -10,6 +10,7 @@ Website : https://www.ljnath.com
 [![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)](https://www.nuget.org/stats/packages/RandomString4Net)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ljnath/RandOMString4Net)
+![Codecov](https://img.shields.io/codecov/c/github/ljnath/RandomString4Net)
 
 
 ## Introduction
@@ -44,6 +45,7 @@ etc. etc.
 * Added support for .NET Core (>2.2)
 * Added support for .NET Standard (>2.0)
 * Added support for RandomNumberGenerator in .NET 6.0 and higher as RNGCryptoServiceProvider is marked as obsolete
+* Added support for .NET 8.0
 
 
 ## Supported Types

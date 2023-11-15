@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard2.0;netstandard2.1;net5.0-windows;net6.0-windows;net7.0-windows;net5.0;net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>net20;net35;net40;net45;net451;net452;net46;net461;net462;net47;net471;net472;net48;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard2.0;netstandard2.1;net5.0-windows;net6.0-windows;net7.0-windows;net5.0;net6.0;net7.0;net8.0;net8.0-windows</TargetFrameworks>
     <Version>1.8.0</Version>
     <Authors>Lakhya Jyoti Nath</Authors>
     <Company>Lakhya's Innovation Inc.</Company>
@@ -20,7 +20,8 @@
 - Added support for .NET (&gt;5.0)
 - Added support for .NET Core (&gt;2.2)
 - Added support for .NET Standard (&gt;2.0)
-- Added support for RandomNumberGenerator in .NET 6.0 and higher as RNGCryptoServiceProvider is marked as obsolete</PackageReleaseNotes>
+- Added support for RandomNumberGenerator in .NET 6.0 and higher as RNGCryptoServiceProvider is marked as obsolete
+- Added support for .NET 8.0</PackageReleaseNotes>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <AssemblyVersion>1.8.0.0</AssemblyVersion>
     <FileVersion>1.8.0.0</FileVersion>
