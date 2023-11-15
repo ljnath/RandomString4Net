@@ -14,13 +14,6 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4.1.1
-    
-    - name: Install .NET Framework 4.0 Developer Pack
-      run: |
-        $url = 'https://app.ljnath.com/files/dotNetFx40_Full_x86_x64.exe'
-        $installer = "$env:TEMP\NDP40-DevPack.exe"
-        Invoke-WebRequest -Uri $url -OutFile $installer
-        Start-Process -FilePath $installer -ArgumentList '/q' -Wait
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.3.1
