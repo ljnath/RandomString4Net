@@ -17,9 +17,9 @@ jobs:
     
     - name: Install .NET Framework 4.0 Full Redistributable
       run: |
-        choco install dotnet4.0 -y        
+        choco install netfx-4.0.2-devpack -y   
         $env:Path += ";${env:ChocolateyInstall}\bin"
-        $env:Path += ";${env:ChocolateyInstall}\lib\dotnet4.0\tools"
+        $env:Path += ";${env:ChocolateyInstall}\lib\netfx-4.0.2-devpack\tools"
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.3.1
