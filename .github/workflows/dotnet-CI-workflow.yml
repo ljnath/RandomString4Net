@@ -27,6 +27,12 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore RandomString4Net.sln
 
+    - name: Install .NET Framework 4.0 Developer Pack
+      run: |
+        choco install dotnet4.0-targetpack -y
+        # The following line sets up the environment variables required by msbuild
+        refreshenv
+
     - name: Build RandomString4Net project for release
       run: msbuild RandomString4Net.sln -property:Configuration=Release -property:platform="Any CPU"
       
