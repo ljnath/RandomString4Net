@@ -17,9 +17,9 @@ jobs:
     
     - name: Install .NET Framework 4.0 Full Redistributable
       run: |
-        choco install dotnet4.0 -y
-        Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
-        RefreshEnvironment      
+        choco install dotnet4.0 -y        
+        $env:Path += ";${env:ChocolateyInstall}\bin"
+        $env:Path += ";${env:ChocolateyInstall}\lib\dotnet4.0\tools"
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.3.1
@@ -33,7 +33,7 @@ jobs:
     - name: Restore NuGet packages
       run: nuget restore RandomString4Net.sln
 
-    - name: Build RandomString4Net project for release
+    - name: Build RandomString4Net for Release
       run: msbuild RandomString4Net.sln -property:Configuration=Release -property:platform="Any CPU"
       
     - name: Run Tests
