@@ -11,9 +11,15 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2022
     steps:
     - uses: actions/checkout@v4.1.1
+    
+    - name: Install .NET Framework 4.0 Full Redistributable
+      run: |
+        choco install dotnet4.0 -y
+        Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
+        RefreshEnvironment      
 
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.3.1
@@ -23,15 +29,9 @@ jobs:
       
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1.1.1
-      
+
     - name: Restore NuGet packages
       run: nuget restore RandomString4Net.sln
-
-    - name: Install .NET Framework 4.0 Full Redistributable
-      run: |
-        choco install dotnet4.0 -y
-        # The following line sets up the environment variables required by msbuild
-        refreshenv
 
     - name: Build RandomString4Net project for release
       run: msbuild RandomString4Net.sln -property:Configuration=Release -property:platform="Any CPU"
