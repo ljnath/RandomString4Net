@@ -160,7 +160,7 @@ namespace RandomString4Net
             if (count <= 0 || maxLength <= 0)
                 throw new InvalidLengthException("Number and length of random strings should be a non-zero postive numbver");
 
-            byte[] randomSeeds = new byte[1];
+            byte[] randomSeeds = new byte[4];
 
 #if NET6_0_OR_GREATER
             RandomNumberGenerator randomNumberGenerator = RandomNumberGenerator.Create();
@@ -172,7 +172,7 @@ namespace RandomString4Net
 #endif
 
             // creating an instance of Random() using the random seed value
-            Random random = new Random(randomSeeds[0]);
+            Random random = new Random(BitConverter.ToInt32(randomSeeds, 0));
 
             if (!forceOccuranceOfEachType)
                 return getRandomStrings(random, String.Join("", inputStrings), count, maxLength, randomLength, forceUnique);
