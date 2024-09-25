@@ -43,6 +43,8 @@ namespace RandomString4Net.Exceptions
 
         public InvalidLengthException(string format, Exception innerException, params object[] args) : base(string.Format(format, args), innerException) { }
 
+#if !NET8_0_OR_GREATER
         protected InvalidLengthException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+#endif
     }
 }
