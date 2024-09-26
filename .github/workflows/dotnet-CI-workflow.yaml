@@ -2,17 +2,21 @@ name: "Build and test"
 
 on:
   push:
+    branches:
+      - master
     paths-ignore:
       - '**/*.md'
       - '**/*.gitignore'
       - '**/*.gitattributes'
   pull_request:
+
     branches:
-      - main
+      - master
     paths-ignore:
       - '**/*.md'
       - '**/*.gitignore'
       - '**/*.gitattributes'
+
   workflow_dispatch:
       
 jobs:
@@ -47,7 +51,7 @@ jobs:
       run: dotnet test
 
     - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v4
-      env:
+      uses: codecov/codecov-action@v3
+      with:
         token: ${{ secrets.CODECOV_TOKEN }}
         verbose: true
