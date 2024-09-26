@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomString4NetTester", "RandomString4NetTester\RandomString4NetTester.csproj", "{0AF6F74C-E5B1-4E6A-8609-42208938ABD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomString4NetTester", "RandomString4NetTester\RandomString4NetTester.csproj", "{0AF6F74C-E5B1-4E6A-8609-42208938ABD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomString4NetTest", "RandomString4NetTest\RandomString4NetTest.csproj", "{12C4F675-E7CE-4B15-889A-EC269AA8E4B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomString4NetTest", "RandomString4NetTest\RandomString4NetTest.csproj", "{12C4F675-E7CE-4B15-889A-EC269AA8E4B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomString4Net", "RandomString4Net\RandomString4Net.csproj", "{F0A77092-0C76-4151-843C-CD1BD33174B0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA42BC52-B3AE-465A-BCCF-EDA5F1FF8804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomString4NetTesterDotNet", "RandomString4NetTesterDotNet\RandomString4NetTesterDotNet.csproj", "{3F3FA738-BED0-4183-B9B0-32B872B65273}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomString4NetTesterDotNet", "RandomString4NetTesterDotNet\RandomString4NetTesterDotNet.csproj", "{3F3FA738-BED0-4183-B9B0-32B872B65273}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomString4NetTestDotNetFramework", "RandomString4NetTestDotNetFramework\RandomString4NetTestDotNetFramework.csproj", "{BDE991E2-978E-4E23-8E6A-BC86FD16D78D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{3F3FA738-BED0-4183-B9B0-32B872B65273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3FA738-BED0-4183-B9B0-32B872B65273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3FA738-BED0-4183-B9B0-32B872B65273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE991E2-978E-4E23-8E6A-BC86FD16D78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE991E2-978E-4E23-8E6A-BC86FD16D78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE991E2-978E-4E23-8E6A-BC86FD16D78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE991E2-978E-4E23-8E6A-BC86FD16D78D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
