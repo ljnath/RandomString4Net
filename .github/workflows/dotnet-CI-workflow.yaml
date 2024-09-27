@@ -39,7 +39,7 @@ jobs:
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.401
+        dotnet-version: '8.x'
 
     - name: Restore
       run: dotnet restore
@@ -48,7 +48,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test
+      run: dotnet test --collect: "Code Coverage"
 
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
