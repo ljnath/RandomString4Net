@@ -43,6 +43,8 @@ namespace RandomString4Net.Exceptions
 
         public UnsupportedSymbolException(string format, Exception innerException, params object[] args) : base(string.Format(format, args), innerException) { }
 
+#if !NET8_0_OR_GREATER
         protected UnsupportedSymbolException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+#endif
     }
 }
