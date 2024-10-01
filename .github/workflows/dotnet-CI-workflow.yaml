@@ -1,6 +1,8 @@
 name: "Build and test"
 
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - master
@@ -8,8 +10,8 @@ on:
       - '**/*.md'
       - '**/*.gitignore'
       - '**/*.gitattributes'
-  pull_request:
 
+  pull_request:
     branches:
       - master
     paths-ignore:
@@ -17,11 +19,12 @@ on:
       - '**/*.gitignore'
       - '**/*.gitattributes'
 
-  workflow_dispatch:
+  release:
+    types:
+      - published
       
 jobs:
-  build:
-    name: Build 
+  build_and_test:
     runs-on: windows-latest
     env:
       DOTNET_CLI_TELEMETRY_OPTOUT: 1
