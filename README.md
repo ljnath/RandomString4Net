@@ -1,8 +1,8 @@
 # RandomString4Net
-### Version 1.8.0
+### Version 1.9.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
-Date : September 2020 - December 2022 - January 2023 - October 2023 - November 2023<br>
+Date : September 2020 - January 2025<br>
 Email : ljnath@ljnath.com<br>
 Website : https://www.ljnath.com
 
@@ -46,6 +46,8 @@ etc. etc.
 * Added support for .NET Standard (>2.0)
 * Added support for RandomNumberGenerator in .NET 6.0 and higher as RNGCryptoServiceProvider is marked as obsolete
 * Added support for .NET 8.0
+* Added support for .NET 9.0
+* Updated random seed to 4 (https://github.com/jshergal/)
 
 
 ## Supported Types
@@ -114,4 +116,4 @@ Thanks in advance !
 
 ## License
 
-Copyright © 2020-2023 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
+Copyright © 2020-2025 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).

@@ -1,7 +1,7 @@
 ﻿/**
  * 
  * RandomString4Net - .NET library to generate N random strings of M length from various categories
- * Copyright (c) 2020-2023 Lakhya Jyoti Nath
+ * Copyright (c) 2020-2025 Lakhya Jyoti Nath
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
