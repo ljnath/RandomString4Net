@@ -1,16 +1,16 @@
 # RandomString4Net
-### Version 1.9.0
+### Version 1.10.0
 
 Author : Lakhya Jyoti Nath (ljnath)<br>
-Date : September 2020 - January 2025<br>
+Date : September 2020 - April 2026<br>
 Email : ljnath@ljnath.com<br>
-Website : https://www.ljnath.com
+Website : https://ljnath.com
 
 [![Nuget](https://img.shields.io/nuget/v/RandomString4Net)](https://www.nuget.org/packages/RandomString4Net/)
 [![Nuget](https://img.shields.io/nuget/dt/RandomString4Net)](https://www.nuget.org/stats/packages/RandomString4Net)
 ![GitHub](https://img.shields.io/github/license/ljnath/RandomString4Net)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/ljnath/RandOMString4Net)
-![Codecov](https://img.shields.io/codecov/c/github/ljnath/RandomString4Net)
+![Codecov](https://codecov.io/gh/ljnath/PyRandomString/graph/badge.svg?token=61BPmhL4uA)
 
 
 ## Introduction
@@ -48,6 +48,7 @@ etc. etc.
 * Added support for .NET 8.0
 * Added support for .NET 9.0
 * Updated random seed to 4 (https://github.com/jshergal/)
+* Added support for .NET 10.0
 
 
 ## Supported Types
@@ -116,4 +117,4 @@ Thanks in advance !
 
 ## License
 
-Copyright © 2020-2025 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
+Copyright © 2020-2026 [Lakhya's Innovation Inc.](https://github.com/ljnath/) under the [MIT License](https://github.com/ljnath/RandomString4Net/blob/master/LICENSE).
